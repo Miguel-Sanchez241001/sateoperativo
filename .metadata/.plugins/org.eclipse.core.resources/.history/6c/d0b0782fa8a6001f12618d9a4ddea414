@@ -1,0 +1,55 @@
+package pe.bn.com.sate.ope.transversal.util.componentes;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import java.io.IOException;
+
+import org.springframework.security.web.csrf.CsrfToken;
+import org.springframework.security.web.csrf.CsrfTokenRepository;
+public class CSRFTokenFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        // Inicialización si es necesaria
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+    	 HttpServletRequest httpRequest = (HttpServletRequest) request;
+         HttpServletResponse httpResponse = (HttpServletResponse) response;
+         
+         HttpSession session = httpRequest.getSession(false);
+
+         if (session != null) {
+             CsrfToken csrfToken = (CsrfToken) session.getAttribute("org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN");
+             if (csrfToken == null) {
+                 csrfToken = CsrfTokenRepository.generateToken(httpRequest);
+                 CsrfTokenRepository.saveToken(csrfToken, httpRequest, httpResponse);
+                // logger.info("CSRF Token generado y guardado en la sesión.");
+             }else{
+     /*            logger.info("CSRF Existe en la sesión.");
+                 logger.info("CSRF TOKEN: "+csrfToken.getToken());
+                 logger.info("CSRF HEADER: "+csrfToken.getHeaderName());
+                 logger.info("CSRF ParameterName: "+csrfToken.getParameterName());*/
+
+
+             }
+         }
+
+         filterChain.doFilter(request, response);
+    	
+    	CsrfToken csrf = (CsrfToken) ((HttpServletRequest) request).getAttribute(CsrfToken.class.getName());
+        if (csrf != null) {
+            request.setAttribute("_csrf.parameterName", csrf.getParameterName());
+            request.setAttribute("_csrf.token", csrf.getToken());
+        }
+        filterChain.doFilter(request, response);
+    }
+
+    @Override
+    public void destroy() {
+        // Limpieza si es necesaria
+    }
+}

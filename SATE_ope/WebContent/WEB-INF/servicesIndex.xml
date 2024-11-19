@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<services>
+    <webserviceClient name="{http://interfaz.service.bn.pe}GatewayInterfaceService" type="JAX-WS">
+        <serviceRef name="service/GatewayInterfaceService"/>
+        <endpoint name="GatewayInterface">
+            <operation name="enviarTramaConsulta"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://tempuri.org/}Service1" type="JAX-WS">
+        <endpoint name="BasicHttpsBinding_IService1">
+            <operation name="aperturaClientes"/>
+            <operation name="modificacionClientes"/>
+            <operation name="aperturaTarjetas"/>
+            <operation name="modificacionTarjetas"/>
+            <operation name="consultaMovimientos"/>
+            <operation name="anulaciones"/>
+            <operation name="cashIn"/>
+            <operation name="nominacionTarjeta"/>
+            <operation name="reemisionTarjeta"/>
+            <operation name="consultas"/>
+            <operation name="consultaSaldos"/>
+            <operation name="compras"/>
+            <operation name="cambioPin"/>
+            <operation name="validacionPin"/>
+            <operation name="autoreversa"/>
+            <operation name="reseteoPin"/>
+            <operation name="informacionTarjeta"/>
+            <operation name="generacionCVV2"/>
+            <operation name="consultaDatosTarjeta"/>
+            <operation name="consultaMovimientosExpediente"/>
+            <operation name="consultaDatosExpediente"/>
+        </endpoint>
+        <endpoint name="BasicHttpsBinding_IService1">
+            <operation name="aperturaClientes"/>
+            <operation name="modificacionClientes"/>
+            <operation name="aperturaTarjetas"/>
+            <operation name="modificacionTarjetas"/>
+            <operation name="consultaMovimientos"/>
+            <operation name="anulaciones"/>
+            <operation name="cashIn"/>
+            <operation name="nominacionTarjeta"/>
+            <operation name="reemisionTarjeta"/>
+            <operation name="consultas"/>
+            <operation name="consultaSaldos"/>
+            <operation name="compras"/>
+            <operation name="cambioPin"/>
+            <operation name="validacionPin"/>
+            <operation name="autoreversa"/>
+            <operation name="reseteoPin"/>
+            <operation name="informacionTarjeta"/>
+            <operation name="generacionCVV2"/>
+            <operation name="consultaDatosTarjeta"/>
+            <operation name="consultaMovimientosExpediente"/>
+            <operation name="consultaDatosExpediente"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://service.open.ws.simm.bn.www}ServiceMessageService" type="JAX-WS">
+        <serviceRef name="service/ServiceMessageService"/>
+        <endpoint name="ServiceMessage">
+            <operation name="sendMessage"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://service.ws.comp.bn.com.pe}ParametroInterfazKeyService" type="JAX-WS">
+        <serviceRef name="service/ParametroInterfazKeyService"/>
+        <endpoint name="ParametroInterfazKey">
+            <operation name="datoParametroService"/>
+        </endpoint>
+    </webserviceClient>
+    <webserviceClient name="{http://interfaz.mq2.bn}ServiceReniec2Service" type="JAX-WS">
+        <serviceRef name="service/ServiceReniec2Service"/>
+        <endpoint name="ServiceReniec2">
+            <operation name="consulta7"/>
+            <operation name="consulta1"/>
+            <operation name="consulta4"/>
+            <operation name="consulta3"/>
+            <operation name="consulta2"/>
+        </endpoint>
+    </webserviceClient>
+</services>

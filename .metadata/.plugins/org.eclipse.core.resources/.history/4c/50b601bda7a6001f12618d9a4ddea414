@@ -1,0 +1,28 @@
+package pe.bn.com.sate.ope.transversal.util.componentes;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+
+import org.springframework.security.web.csrf.CsrfToken;
+public class CSRFTokenFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        // Inicialización si es necesaria
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+        CsrfToken csrf = (CsrfToken) ((HttpServletRequest) request).getAttribute(CsrfToken.class.getName());
+        if (csrf != null) {
+            request.setAttribute("_csrf.parameterName", csrf.getParameterName());
+            request.setAttribute("_csrf.token", csrf.getToken());
+        }
+        filterChain.doFilter(request, response);
+    }
+
+    @Override
+    public void destroy() {
+        // Limpieza si es necesaria
+    }
+}

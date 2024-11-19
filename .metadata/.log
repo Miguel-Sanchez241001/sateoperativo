@@ -1,0 +1,372 @@
+!SESSION 2024-11-05 15:10:35.072 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ibm.rational.rad.product.v97.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v97.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-05 15:10:57.164
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register a package for 'http://www.ibm.com/xmlns/prod/websphere/wrd/extensions/v6.0.0/'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-05 15:10:57.170
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'wrd_linkers'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-05 15:10:57.171
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'dyn_annotModel'
+!SESSION 2024-11-06 09:07:50.925 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ibm.rational.rad.product.v97.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v97.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-06 09:08:13.501
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register a package for 'http://www.ibm.com/xmlns/prod/websphere/wrd/extensions/v6.0.0/'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-06 09:08:13.517
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'wrd_linkers'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-06 09:08:13.517
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'dyn_annotModel'
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-06 09:08:31.608
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-06 09:08:31.616
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:04.720
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.comp [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.comp [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:04.720
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.comp [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:04.766
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.interfaz [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.interfaz [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:04.766
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.interfaz [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:04.911
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.mc [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.mc [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:04.911
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.mc [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:04.971
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.message [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.message [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:04.971
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.message [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:05.011
+!MESSAGE CaptchaForm [in CaptchaForm.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [CaptchaForm [in CaptchaForm.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:05.011
+!MESSAGE CaptchaForm [in CaptchaForm.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:05.019
+!MESSAGE CaptchaAction [in CaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [CaptchaAction [in CaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:05.019
+!MESSAGE CaptchaAction [in CaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:05.030
+!MESSAGE ValidarCaptchaAction [in ValidarCaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [ValidarCaptchaAction [in ValidarCaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:05.030
+!MESSAGE ValidarCaptchaAction [in ValidarCaptchaAction.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.internet.actionforms.actions [in src [in SATE_ope]]]] no existe
+
+!ENTRY com.ibm.ws.jaxrs.core 4 0 2024-11-06 09:09:05.107
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.reniec [in src [in SATE_ope]]]] no existe
+!STACK 1
+Java Model Exception: Java Model Status [package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.reniec [in src [in SATE_ope]]]] no existe]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:560)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:594)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.SourceType.isInterface(SourceType.java:608)
+	at com.ibm.ws.jaxrs.finder.AbstractSourceFinder.resourceChanged(AbstractSourceFinder.java:299)
+	at com.ibm.ccl.ws.internal.finder.core.notifier.impl.NotifyResourceChangedJob.run(NotifyResourceChangedJob.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-11-06 09:09:05.107
+!MESSAGE package-info [in package-info.java [in pe.bn.com.sate.ope.infrastructure.service.external.domain.reniec [in src [in SATE_ope]]]] no existe
+!SESSION 2024-11-18 10:29:39.022 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ibm.rational.rad.product.v97.ide
+Command-line arguments:  -data D:\workspace-aplicaciones-web-SATEOPECERTIFICACION -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v97.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 10:29:41.109
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register a package for 'http://www.ibm.com/xmlns/prod/websphere/wrd/extensions/v6.0.0/'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 10:29:41.114
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'wrd_linkers'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 10:29:41.114
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'dyn_annotModel'
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-18 10:29:47.966
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-18 10:29:47.987
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY com.ibm.etools.javaee.core 4 0 2024-11-18 10:30:11.092
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.common.internal.annotations.core.AnnotationTagParser.eos(AnnotationTagParser.java:45)
+	at org.eclipse.jst.common.internal.annotations.core.AnnotationTagParser.parse(AnnotationTagParser.java:259)
+	at org.eclipse.jst.common.internal.annotations.core.AnnotationsTranslator.setMOFValue(AnnotationsTranslator.java:70)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOFCommentFeature(EMF2DOMAdapterImpl.java:1874)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOFFeature(EMF2DOMAdapterImpl.java:1836)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOF(EMF2DOMAdapterImpl.java:993)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOF(EMF2DOMAdapterImpl.java:973)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOFMultiFeature(EMF2DOMAdapterImpl.java:522)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOFMultiFeature(EMF2DOMAdapterImpl.java:1564)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOFMultiFeature(EMF2DOMAdapterImpl.java:1778)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOFFeature(EMF2DOMAdapterImpl.java:1833)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOF(EMF2DOMAdapterImpl.java:993)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOF(EMF2DOMAdapterImpl.java:973)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOFMultiFeature(EMF2DOMAdapterImpl.java:522)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOFRootFeature(EMF2DOMAdapterImpl.java:1014)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.primUpdateMOF(EMF2DOMAdapterImpl.java:989)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMAdapterImpl.updateMOF(EMF2DOMAdapterImpl.java:973)
+	at org.eclipse.wst.common.internal.emf.resource.EMF2DOMRenderer.doLoad(EMF2DOMRenderer.java:64)
+	at org.eclipse.wst.common.internal.emf.resource.TranslatorResourceImpl.basicDoLoad(TranslatorResourceImpl.java:153)
+	at org.eclipse.wst.common.internal.emf.resource.CompatibilityXMIResourceImpl.doLoad(CompatibilityXMIResourceImpl.java:182)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.wst.common.internal.emf.resource.CompatibilityXMIResourceImpl.loadExisting(CompatibilityXMIResourceImpl.java:304)
+	at org.eclipse.wst.common.internal.emf.resource.TranslatorResourceImpl.load(TranslatorResourceImpl.java:427)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1064)
+	at com.ibm.etools.javaee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:171)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelResource(Web25ModelProvider.java:430)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getXMLModel(Web25ModelProvider.java:288)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:179)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:195)
+	at com.ibm.etools.javaee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:305)
+	at com.ibm.etools.jee.ui.navigator.internal.FlexibleEMFModelManager.getRootObjects(FlexibleEMFModelManager.java:84)
+	at com.ibm.etools.jee.ui.navigator.internal.FlexibleEMFModelManager.getModels(FlexibleEMFModelManager.java:50)
+	at com.ibm.etools.jee.ui.navigator.internal.EMFRootObjectProvider.getModels(EMFRootObjectProvider.java:72)
+	at com.ibm.etools.jee.ui.navigator.internal.LoadingDDJob.run(LoadingDDJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2024-11-18 12:47:01.640 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ibm.rational.rad.product.v97.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v97.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 12:47:07.733
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register a package for 'http://www.ibm.com/xmlns/prod/websphere/wrd/extensions/v6.0.0/'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 12:47:07.739
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'wrd_linkers'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-18 12:47:07.739
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'dyn_annotModel'
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-18 12:47:11.965
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-18 12:47:11.969
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+!SESSION 2024-11-19 11:46:48.152 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.5.20 - pwa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Windows 10 amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ibm.rational.rad.product.v97.ide
+Command-line arguments:  -data D:\workspace-aplicaciones-web-SATEOPECERTIFICACION -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v97.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-19 11:46:50.861
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register a package for 'http://www.ibm.com/xmlns/prod/websphere/wrd/extensions/v6.0.0/'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-19 11:46:50.867
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'wrd_linkers'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-11-19 11:46:50.868
+!MESSAGE Both 'com.ibm.etools.wrd.extensions' and 'com.ibm.zcc.etools.wrd.extensions' register an extension parser for 'dyn_annotModel'
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-19 11:46:56.391
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2024-11-19 11:46:56.400
+!MESSAGE No se ha definido el tipo de componente de tiempo de ejecución com.ibm.ws.cftools.server. Se utiliza en el plug-in com.ibm.ws.st.jee.batch.core.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2024-11-19 12:08:06.455
+!MESSAGE Error interno
+!STACK 1
+Java Model Exception: Java Model Status [Formato javadoc desconocido para h [in bf$h.class [in com.ibm.jsse2 [in C:\IBM97\WebSphere\AppServer\java\8.0\jre\lib\ibmjsseprovider2.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:81)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:999)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:603)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2024-11-19 12:08:06.456
+!MESSAGE Formato javadoc desconocido para h [in bf$h.class [in com.ibm.jsse2 [in C:\IBM97\WebSphere\AppServer\java\8.0\jre\lib\ibmjsseprovider2.jar]]]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2024-11-19 13:54:59.175
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2024-11-19 13:54:59.175
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2024-11-19 13:54:59.175
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2024-11-19 13:54:59.175
+!MESSAGE No se puede hacer una referencia estática al método no estático generateToken(HttpServletRequest) desde el tipo CsrfTokenRepository
+
+!ENTRY org.eclipse.jface 2 0 2024-11-19 15:48:33.590
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-11-19 15:48:33.590
+!MESSAGE A conflict occurred for F5:
+Binding(F5,
+	ParameterizedCommand(Command(com.ibm.etools.rpe.internal.handlers.RefreshHandler,RefreshHandler,
+		,
+		Category(com.ibm.etools.rpe.category,Rich Page Editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a37216dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.rpe.context,,,system)
+Binding(F5,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.StepInto,Recorrer todo,
+		Recorrer todo,
+		Category(org.eclipse.debug.ui.category.run,Ejecutar/depurar,categoría de mandatos de ejecutar/depurar,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68d66493,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(F5,
+	ParameterizedCommand(Command(org.eclipse.ui.file.refresh,Renovar,
+		Renovar los elementos seleccionados,
+		Category(org.eclipse.ui.category.file,Archivo,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5fa2dce3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-11-19 15:48:33.590
+!MESSAGE A conflict occurred for F6:
+Binding(F6,
+	ParameterizedCommand(Command(com.ibm.etools.rpe.internal.handlers.DesignModeHandler,DesignModeHandler,
+		,
+		Category(com.ibm.etools.rpe.category,Rich Page Editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e532418a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.rpe.context,,,system)
+Binding(F6,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.StepOver,Recorrer principal,
+		Recorrer principal,
+		Category(org.eclipse.debug.ui.category.run,Ejecutar/depurar,categoría de mandatos de ejecutar/depurar,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@825d2bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-11-19 15:48:33.590
+!MESSAGE A conflict occurred for CTRL+SHIFT+3:
+Binding(CTRL+SHIFT+3,
+	ParameterizedCommand(Command(com.ibm.etools.rpe.internal.handlers.BrowserHandler,Browser,
+		,
+		Category(com.ibm.etools.rpe.category,Rich Page Editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f2f25231,
+		[Parameter(org.eclipse.ui.commands.radioStateParameter,Radio Name,null,false)],,true),[org.eclipse.core.commands.Parameterization@e6857f0e]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.rpe.context,,,system)
+Binding(CTRL+SHIFT+3,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.debug.ui.script.opensource,Abrir fuente,
+		Muestra el código fuente de JavaScript para el elemento de script seleccionado,
+		Category(org.eclipse.wst.jsdt.debug.ui.category,Depuración de JavaScript,Herramientas para depurar JavaScript,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@634dd8de,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)

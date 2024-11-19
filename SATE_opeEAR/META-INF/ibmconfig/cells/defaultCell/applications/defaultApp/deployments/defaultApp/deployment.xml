@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1537101867109">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1537101867109" startingWeight="10" binariesURL="$(APP_INSTALL_ROOT)/srv1capwa14Cell01/SATE_opeEAR.ear" useMetadataFromBinaries="false" enableDistribution="true" createMBeansForResources="true" reloadEnabled="false" appContextIDForSecurity="href:srv1capwa14Cell01/SATE_opeEAR" filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755" allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false" asyncRequestDispatchType="DISABLED" standaloneModule="false" enableClientModule="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1727473655590" enable="true" target="ServerTarget_1727473655590"/>
+    <targetMappings xmi:id="DeploymentTargetMapping_1727473655591" enable="true" target="ServerTarget_1727473655591"/>
+    <classloader xmi:id="Classloader_1537101867109" mode="PARENT_FIRST">
+      <libraries xmi:id="LibraryRef_1541205874926" libraryName="SATEope"/>
+    </classloader>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1537101867109" startingWeight="10000" uri="SATE_ope.war" classloaderMode="PARENT_LAST" containsEJBContent="0">
+      <targetMappings xmi:id="DeploymentTargetMapping_1727473655592" target="ServerTarget_1727473655590"/>
+      <targetMappings xmi:id="DeploymentTargetMapping_1727473655593" target="ServerTarget_1727473655591"/>
+      <classloader xmi:id="Classloader_1727473655590"/>
+    </modules>
+    <properties xmi:id="Property_1727473655590" name="metadata.complete" value="false"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1727473655590" name="CAPWA14_01" nodeName="srv1capwa14Node01"/>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1727473655591" name="srv1cihai1Http" nodeName="srv1cihai1NodeHttp"/>
+</appdeployment:Deployment>

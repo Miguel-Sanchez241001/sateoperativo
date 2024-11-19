@@ -1,0 +1,176 @@
+package pe.bn.com.sate.ope.application.view;
+
+ import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.Serializable;
+
+import javax.annotation.PostConstruct;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
+import javax.imageio.ImageIO;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.codec.Base64;
+import org.springframework.stereotype.Controller;
+
+import pe.bn.com.sate.ope.application.model.LoginModel;
+import pe.bn.com.sate.ope.infrastructure.exception.InternalServiceException;
+import pe.bn.com.sate.ope.infrastructure.exception.ServiceException;
+import pe.bn.com.sate.ope.infrastructure.facade.FWMCProcesos;
+import pe.bn.com.sate.ope.infrastructure.facade.InterfaceGatewayFacade;
+import pe.bn.com.sate.ope.infrastructure.service.external.domain.novatronic.captcha.Captcha;
+import pe.bn.com.sate.ope.infrastructure.service.internal.CaptchaService;
+import pe.bn.com.sate.ope.transversal.util.UsefulWebApplication;
+import pe.bn.com.sate.ope.transversal.util.constantes.ConstantesGenerales;
+import pe.bn.com.sate.ope.transversal.util.excepciones.InternalExcepcion;
+import pe.bn.com.sate.ope.transversal.util.excepciones.LoginException;
+
+/**
+ * Controlador para la gestión del login de usuarios.
+ */
+@Controller("loginController")
+@Scope("view")
+public class LoginController implements Serializable {
+
+    private static final Logger logger = Logger.getLogger(LoginController.class);
+
+    private static final long serialVersionUID = 1L;
+    private LoginModel loginModel;
+
+    @Autowired
+    private CaptchaService captchaService;
+
+    @Autowired
+    private InterfaceGatewayFacade fWInterfaceGateway;
+
+
+
+    /**
+     * Inicializa el modelo de login y genera un captcha.
+     */
+    @PostConstruct
+    public void init() {
+        loginModel = new LoginModel();
+        generarCaptcha();
+
+        // Manejo de excepciones de autenticación si es necesario
+        Exception e = (Exception) FacesContext.getCurrentInstance().getExternalContext().getSessionMap()
+                .remove("SPRING_SECURITY_LAST_EXCEPTION");
+
+        if (e instanceof LoginException) {
+            logger.info("Excepción de login: " + e.getMessage());
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_ERROR, e.getMessage(), "");
+            UsefulWebApplication.actualizarComponente("formlog");
+        }
+    }
+
+    /**
+     * Verifica si el usuario está logueado y redirige si es necesario.
+     */
+    public void verificarUsuarioLogueado() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        if (auth != null && auth.isAuthenticated() && !(auth instanceof AnonymousAuthenticationToken)) {
+            redireccionar();
+        }
+    }
+
+    /**
+     * Inicia la sesión del usuario validando el captcha y redireccionando
+     * a la autenticación de login.
+     */
+    public void iniciarSesion() {
+        logger.info("[loginController] - Iniciando método iniciarSesion");
+
+        if (captchaService.validarCaptcha(loginModel.getCaptcha(), loginModel.getCaptchaTexto())) {
+            ExternalContext context = FacesContext.getCurrentInstance().getExternalContext();
+            try {
+                context.redirect(context.getRequestContextPath() + "/login_autenticacion");
+            } catch (IOException e) {
+                logger.error("Error en redireccionar: " + e.getMessage());
+            }
+            FacesContext.getCurrentInstance().responseComplete();
+        } else {
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_ERROR, "Captcha no coincide", "");
+        }
+        logger.info("[loginController] - Fin método iniciarSesion");
+    }
+
+    /**
+     * Redirecciona al usuario a la página principal.
+     */
+    private void redireccionar() {
+        try {
+            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+            ec.redirect(ec.getRequestContextPath() + "/principal.jsf");
+            FacesContext.getCurrentInstance().responseComplete();
+        } catch (IOException e) {
+            logger.error("Error en redireccionar: " + e.getMessage());
+        }
+    }
+
+    public LoginModel getLoginModel() {
+        return loginModel;
+    }
+
+    public void setLoginModel(LoginModel loginModel) {
+        this.loginModel = loginModel;
+    }
+
+    /**
+     * Genera un captcha y lo configura en el modelo de login.
+     */
+    public void generarCaptcha() {
+        try {
+            Captcha captcha = captchaService.generarCaptcha();
+            loginModel.setCaptcha(captcha);
+
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            ImageIO.write(captcha.getImage(), "jpeg", baos);
+            baos.flush();
+
+            byte[] encoded = Base64.encode(baos.toByteArray());
+            logger.info("Captcha generado: " + new String(encoded).substring(0, 10));
+
+            UsefulWebApplication.ejecutar("cargarCaptcha('" + new String(encoded) + "')");
+        } catch (IOException e) {
+            logger.error("Error generando captcha: " + e.getMessage());
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_ERROR, "Ocurrió un error, intente nuevamente", "Ocurrió un error, intente nuevamente");
+        }
+    }
+
+    /**
+     * Recupera la clave del usuario y la envía a su correo.
+     */
+    public void recuperarClave() {
+        try {
+            logger.info("[loginController] - Inicio método recuperarClave");
+
+            fWInterfaceGateway.recuperarClave(loginModel.getRucRecuperar(), loginModel.getTipoDocumentoRecuperar(),
+                    loginModel.getNumeroDocumentoRecuperar(), loginModel.getCorreoRecuperar());
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_INFO, "Clave reiniciada y enviada a su correo laboral", "");
+            limpiarFormularioRecuperarClave();
+            logger.info("[loginController] - Fin método recuperarClave");
+        } catch (InternalServiceException ise) {
+            logger.error("Error en InternalServiceException: " + ise.getMessage());
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_ERROR,  ise.getMessage(), ConstantesGenerales.ERROR_PERSISTENCE_INTERNAL);
+        } catch (ServiceException se) {
+            logger.error("Error en ServiceException: " + se.getMessage());
+            UsefulWebApplication.mostrarMensajeJSF(ConstantesGenerales.SEVERITY_ERROR, ConstantesGenerales.ERROR_PERSISTENCE_EXTERNAL_WEB_SERVICE_SIMM, ConstantesGenerales.ERROR_PERSISTENCE_GENERAL);
+        }
+    }
+
+    /**
+     * Limpia el formulario de recuperación de clave.
+     */
+    private void limpiarFormularioRecuperarClave() {
+        loginModel.setRucRecuperar("");
+        loginModel.setTipoDocumentoRecuperar("");
+        loginModel.setNumeroDocumentoRecuperar("");
+        loginModel.setCorreoRecuperar("");
+    }
+}

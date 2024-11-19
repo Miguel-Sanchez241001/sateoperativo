@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.aries.bundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460466_0" label="Proyectos de paquete OSGi" name="Proyectos de paquete OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.fragmentBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460476_1" label="Proyectos de paquete de fragmentos OSGi" name="Proyectos de paquete de fragmentos OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.applicationWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460479_2" label="Proyectos de aplicación OSGi" name="Proyectos de aplicación OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.compositeBundleWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460483_3" label="Proyectos de paquete compuesto OSGi" name="Proyectos de paquete compuesto OSGi"/>
+<workingSet editPageId="com.ibm.etools.aries.subsystemWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460486_4" label="Proyectos de características de Liberty" name="Proyectos de características de Liberty"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.EARWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460490_5" label="Proyectos EAR" name="EARWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.AppClientWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460494_6" label="Proyectos de cliente de aplicaciones" name="AppClientWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.EjbWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460500_7" label="Proyectos EJB" name="EjbWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.ConnectorWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460505_8" label="Proyectos de conector" name="ConnectorWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.WebWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460511_9" label="Proyectos web" name="NewWebWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.JPAWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460518_10" label="Proyectos JPA" name="JPAWorkingSet.name"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.UtilWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460524_11" label="Proyectos de utilidad" name="WS_UTIL"/>
+<workingSet editPageId="com.ibm.etools.j2ee.ui.WebFragmentWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460532_12" label="Proyectos de fragmento web" name="WebFragmentWorkingSetPage.name"/>
+<workingSet editPageId="com.ibm.etools.project.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460539_13" label="Proyectos sin categoría" name="OthersWorkingSet.name">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SATE_ope" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SATE_opeEAR" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.wcg.BatchWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460549_14" label="Proyectos de Modern Batch" name="WCG_WORKINGSET"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1730837460655_15" label="Varios conjuntos de trabajo" name="Aggregate:Proyectos de paquete OSGi:Proyectos de paquete de fragmentos OSGi:Proyectos de aplicación OSGi:Proyectos de paquete compuesto OSGi:Proyectos de características de Liberty:EARWorkingSetPage.name:AppClientWorkingSetPage.name:EjbWorkingSetPage.name:ConnectorWorkingSetPage.name:NewWebWorkingSetPage.name:JPAWorkingSet.name:WS_UTIL:WebFragmentWorkingSetPage.name:OthersWorkingSet.name:WCG_WORKINGSET:">
+<workingSet IMemento.internal.id="Proyectos de paquete OSGi"/>
+<workingSet IMemento.internal.id="Proyectos de paquete de fragmentos OSGi"/>
+<workingSet IMemento.internal.id="Proyectos de aplicación OSGi"/>
+<workingSet IMemento.internal.id="Proyectos de paquete compuesto OSGi"/>
+<workingSet IMemento.internal.id="Proyectos de características de Liberty"/>
+<workingSet IMemento.internal.id="EARWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="AppClientWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="EjbWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="ConnectorWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="NewWebWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="JPAWorkingSet.name"/>
+<workingSet IMemento.internal.id="WS_UTIL"/>
+<workingSet IMemento.internal.id="WebFragmentWorkingSetPage.name"/>
+<workingSet IMemento.internal.id="OthersWorkingSet.name"/>
+<workingSet IMemento.internal.id="WCG_WORKINGSET"/>
+</workingSet>
+</workingSetManager>

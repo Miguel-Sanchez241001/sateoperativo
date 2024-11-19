@@ -1,0 +1,5 @@
+package pe.bn.com.sate.ope.application.model;
+
+public class TipoDocumentoValidator {
+
+}
